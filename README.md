@@ -7,5 +7,5 @@ In this repository, I have uploaded the cheatsheets that I made before the day o
 |S. No.|Certification|CheatSheet|
 |:---:|:---:|:---:|
 |1.|[eJPT (eLearnSecurity Junior Penetration Tester)](https://elearnsecurity.com/product/ejpt-certification/)|[eJPT-CheatSheet](https://github.com/Hellfire0x01/cert-cheatsheets/blob/main/eJPT%20CheatSheet.md)|
-|2.|[BTL1 (Blue Team Level 1)](https://securityblue.team/why-btl1/)|[BTL1-CheatSheet]()|
+|2.|[BTL1 (Blue Team Level 1)](https://securityblue.team/why-btl1/)|[BTL1-CheatSheet](https://github.com/Hellfire0x01/cert-cheatsheets/blob/main/BTL1-CheatSheet.md)|
 ||||
