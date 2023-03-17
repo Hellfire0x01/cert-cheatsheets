@@ -182,7 +182,7 @@ Dumping the process with a specific PID XXXX,
 volatility -f /path/to/file.mem --profile=PROFILE procdump -p XXXX -D /home/ubuntu/Desktop
 ```
 
-Pprint all available processes,
+Print all available processes,
 
 ```bash
 volatility -f memdump.mem --profile=PROFILE psscan
