@@ -8,4 +8,4 @@ In this repository, I have uploaded the cheatsheets that I made before the day o
 |:---:|:---:|:---:|
 |1.|[eJPT (eLearnSecurity Junior Penetration Tester)](https://elearnsecurity.com/product/ejpt-certification/)|[eJPT-CheatSheet](https://github.com/Hellfire0x01/cert-cheatsheets/blob/main/eJPT%20CheatSheet.md)|
 |2.|[BTL1 (Blue Team Level 1)](https://securityblue.team/why-btl1/)|[BTL1-CheatSheet](https://github.com/Hellfire0x01/cert-cheatsheets/blob/main/BTL1-CheatSheet.md)|
-||||
+|3.|[CCD (Certified CyberDefender)](https://cyberdefenders.org/blue-team-training/courses/certified-cyberdefender-certification/)|[CCD-CheatSheet](https://github.com/Hellfire0x01/cert-cheatsheets/blob/main/CCD-CheatSheet.md)|
